@@ -1,0 +1,21 @@
+package compi;
+
+import java.util.Scanner;
+
+public class Prb1 {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int times = in.nextInt();
+		for (int i = 0; i < times; i++) {
+		}
+	}
+
+	static void func(Scanner in) {
+		String n = in.next();
+		char[] ch = new char[n.length()];
+
+		for (int i = 0; i < n.length(); i++) {
+			ch[i] = n.charAt(i);
+		}
+	}
+}

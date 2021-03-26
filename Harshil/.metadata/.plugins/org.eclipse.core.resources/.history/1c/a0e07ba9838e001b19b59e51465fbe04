@@ -1,0 +1,32 @@
+package compi;
+
+import java.util.Scanner;
+
+public class Prb1 {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int times = in.nextInt();
+		for (int i = 0; i < times; i++) {
+			func(in);
+		}
+	}
+
+	static void func(Scanner in) {
+		int sum = 0;
+		String n = in.next();
+		char[] ch = new char[n.length()];
+
+		for (int i = 0; i < n.length(); i++) {
+			ch[i] = n.charAt(i);
+		}
+
+		for (char c : ch) {
+			if (c == 'A' || c == 'a') {
+				sum++;
+			}
+		}
+		if (sum == 5) {
+			System.out.println("lovely string");
+		}
+	}
+}
