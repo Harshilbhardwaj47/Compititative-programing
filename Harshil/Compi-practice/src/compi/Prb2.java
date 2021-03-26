@@ -1,0 +1,28 @@
+package compi;
+
+import java.util.Scanner;
+
+public class Prb2 {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int test = in.nextInt();
+		for (int i = 0; i < test; i++) {
+			fuc(in);
+		}
+
+	}
+
+	static void fuc(Scanner in) {
+		int sum = 0;
+		int row = in.nextInt();
+		int col = in.nextInt();
+		int arr[][] = new int[row][col];
+		for (int i = 0; i < row; i++) {
+			for (int j = 0; j < col; j++) {
+				arr[i][j] = in.nextInt();
+			}
+		}
+
+		//while loop under row manipulation
+	}
+}

@@ -1,0 +1,18 @@
+package compi;
+
+import java.util.Scanner;
+
+public class Prb2 {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int test = in.nextInt();
+		for (int i = 0; i > test; i++) {
+		}
+
+	}
+
+	static void fuc(Scanner in) {
+		int row = in.nextInt();
+		int col = in.nextInt();
+	}
+}
