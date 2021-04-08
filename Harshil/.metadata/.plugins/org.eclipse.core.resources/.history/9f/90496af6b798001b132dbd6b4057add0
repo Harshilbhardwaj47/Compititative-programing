@@ -1,0 +1,31 @@
+package compi;
+
+import java.util.Scanner;
+
+public class Prb3 {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int k = in.nextInt();
+		int m = in.nextInt();
+		int n = in.nextInt();
+		int chance = 0;
+
+		while (k != m) {
+			if (k < m) {
+				k = k * 2;
+				k = k - 2;
+				k = k - 1;
+			} else {
+				k = k * 2;
+				k = k - 2;
+				if (k > m) {
+					k = k - 1;
+				}
+			}
+			chance++;
+		}
+
+		System.out.println(chance);
+
+	}
+}

@@ -5,16 +5,14 @@ import java.util.Scanner;
 public class Prb3 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		int test = in.nextInt();
-		while (test != 0) {
-			int k, m, n;
-			k = in.nextInt();
-			m = in.nextInt();
-			n = in.nextInt();
 
-			System.out.println(steps(k, m, n));
-			test--;
-		}
+		int k, m, n;
+		k = in.nextInt();
+		m = in.nextInt();
+		n = in.nextInt();
+
+		System.out.println(steps(k, m, n));
+
 	}
 
 	static int steps(int k, int m, int n) {

@@ -13,7 +13,6 @@ public class Prb3 {
 			n = in.nextInt();
 
 			System.out.println(steps(k, m, n));
-			test--;
 		}
 	}
 

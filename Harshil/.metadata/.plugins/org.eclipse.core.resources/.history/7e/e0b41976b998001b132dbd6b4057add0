@@ -1,0 +1,31 @@
+package compi;
+
+import java.util.Scanner;
+
+public class Prb3 {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int k = in.nextInt();
+		int m = in.nextInt();
+		int n = in.nextInt();
+		int chance = 0;
+		 
+		System.out.println(chance);
+
+	}
+	static int steps(int k,int m,int n) {
+		if(k>=m){
+			return (k-m)/2 + (k-m)%2;
+		}
+
+		if(m%n==0){
+			return 1 + minSteps(k,m/n,n);
+		}
+		else{
+			int x;
+			x = (m/n+1)*n;
+			return (x-m)/2 + (x-m)%2 + minSteps(k,x,n);
+		}
+	}
+	}
+}
