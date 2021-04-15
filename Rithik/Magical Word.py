@@ -37,7 +37,6 @@
 # Explanation
 # ASCII values of alphabets in AFREEN are 65, 70, 82, 69 ,69 and 78 respectively which are converted to CGSCCO with ASCII values 67, 71, 83, 67, 67, 79 respectively. All such ASCII values are prime numbers.
 
-
 t = int(input())
 l = []
 prime = [61,67,71,79,83,89,91]
@@ -71,16 +70,18 @@ while t>0:
         # equating final result 
         # first condition not working Rest fine
         if l[i]-minn == maxx-l[i]:
-            final.append(minn)
+            final.append(chr(minn).upper())
             
         elif l[i]-minn > maxx-l[i]:
-            final.append(maxx)
+            final.append(chr(maxx).upper())
             
         else:
-            final.append(minn)
+            final.append(chr(minn).upper())
             
-        print(chr(final[i]))
+print(*final,sep='')
         
             
+            
+       
             
     
